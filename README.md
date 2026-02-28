@@ -2,7 +2,7 @@
 
 ![alt text](assets/TESAIoT-Cover.png)
 
-This documentation contains the **TESAIoT** multi-core embedded projects for Infineon PSoC™ 8 (Cortex-M55 + Cortex-M33): the main firmware stack and the DoReMi sound/audio application.
+This documentation contains the **TESAIoT** multi-core embedded projects for Infineon PSoC™ 8 (Cortex-M55 + Cortex-M33): the main firmware stack, the DoReMi sound/audio application, and the TESA Digital Twin install & setup tutorials.
 
 > **Demos, examples & other materials**  
 > Video demos, 3D models (e.g. ABB Robot Arm, Cannon, Devices, Gauge, Guitar, MCU-Servo, PLC, PSoC-Edge-E84), kit images, and related assets are available in the **TESAIoT_Models** Google Drive folder:  
@@ -139,14 +139,36 @@ PSoC Edge DoReMi application: software beep synthesis, I2S playback, piano-style
 
 ---
 
+### 3. [TESAIoT Digital Twin – Install & setup](tesaiot_digital_twin_install/README.md)
+
+Tutorials for installing and configuring the **TESA Digital Twin** VS Code extension: extension install, CA certificate, and MQTT credentials.
+
+#### 3.1 Digital Twin – overview & setup
+
+| Document                                                                                                              | Description                                        |
+| --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| [TESA Tutorials (Digital Twin entry)](tesaiot_digital_twin_install/README.md)                                        | Overview and entry to Digital Twin tutorial series |
+| [TESA Digital Twin Tutorials](tesaiot_digital_twin_install/tesa-digital-twin/README.md)                               | Setup overview and table of contents                |
+
+#### 3.2 Digital Twin – step-by-step
+
+| Document                                                                                                                              | Description                          |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| [Install the TESA Digital Twin Extension](tesaiot_digital_twin_install/tesa-digital-twin/01-install_extension/README.md)                | Install extension (marketplace/VSIX)  |
+| [Install the CA Certificate](tesaiot_digital_twin_install/tesa-digital-twin/02-install-ca-certificate/README.md)                      | CA cert for TLS/WSS (T3D CLI/manual) |
+| [Configure Credentials for TESA Digital Twin](tesaiot_digital_twin_install/tesa-digital-twin/03-credentials-settings/README.md)     | MQTT credentials and connection      |
+
+---
+
 ## Quick reference
 
-| Repository                       | Purpose                                                                                                              |
-| -------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **tesaiot_firmware_stack_alpha** | Main firmware: CM55 UI (LVGL), CM33 connectivity (WiFi, BLE, CLI, event bus), IPC, build setup, BSXLite, shared docs |
-| **tesaiot_sound_audio_doremi**   | Audio app: beep generator, I2S player, piano/songs, WAV→C, TLV320DAC3100 codec docs                                  |
+| Repository                         | Purpose                                                                                                              |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **tesaiot_firmware_stack_alpha**   | Main firmware: CM55 UI (LVGL), CM33 connectivity (WiFi, BLE, CLI, event bus), IPC, build setup, BSXLite, shared docs |
+| **tesaiot_sound_audio_doremi**     | Audio app: beep generator, I2S player, piano/songs, WAV→C, TLV320DAC3100 codec docs                                  |
+| **tesaiot_digital_twin_install**   | TESA Digital Twin: extension install, CA certificate, MQTT credentials for VS Code                                  |
 
-Both use Infineon PSoC 8 (Cortex-M55 + Cortex-M33). The firmware stack is the primary application framework; DoReMi is a dedicated sound/audio application and reference.
+Firmware stack and DoReMi use Infineon PSoC 8 (Cortex-M55 + Cortex-M33). The firmware stack is the primary application framework; DoReMi is a dedicated sound/audio application and reference.
 
 ---
 
