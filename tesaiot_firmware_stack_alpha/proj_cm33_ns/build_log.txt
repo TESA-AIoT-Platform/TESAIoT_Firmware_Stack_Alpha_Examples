@@ -1,0 +1,68 @@
+Searching installed tools in progress...
+Searching installed tools complete
+make[1]: Entering directory '/cygdrive/d/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc'
+Searching installed tools in progress...
+Searching installed tools complete
+/usr/bin/make -C proj_cm33_s build_proj MTB_APPLICATION_SUBPROJECTS="proj_cm33_s proj_cm33_ns proj_cm55" MTB_APPLICATION_NAME="psoc-e84-lvgl-ipc" MTB_APPLICATION_PROMOTE=true && /usr/bin/make -C proj_cm33_ns build_proj MTB_APPLICATION_SUBPROJECTS="proj_cm33_s proj_cm33_ns proj_cm55" MTB_APPLICATION_NAME="psoc-e84-lvgl-ipc" MTB_APPLICATION_PROMOTE=true && /usr/bin/make -C proj_cm55 build_proj MTB_APPLICATION_SUBPROJECTS="proj_cm33_s proj_cm33_ns proj_cm55" MTB_APPLICATION_NAME="psoc-e84-lvgl-ipc" MTB_APPLICATION_PROMOTE=true && true
+make[2]: Entering directory '/cygdrive/d/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_s'
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/drsanti/ModusToolbox/tools_3.5 /cygdrive/c/Users/drsanti/ModusToolbox/tools_3.6 C:/Users/drsanti/ModusToolbox/tools_3.5 C:/Users/drsanti/ModusToolbox/tools_3.6". This build is currently using "C:/Users/drsanti/ModusToolbox/tools_3.6". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+Use of the FPU on a secure project may be susceptible to an VLLDM Instruction Security Vulnerability (CVE-2021-35465). Verify the toolchain you are using already provides a workaround or use VFP_SELECT=softfloat instead of VFP_SELECT=. For more information see https://developer.arm.com/Arm%20Security%20Center/VLLDM%20Instruction%20Security%20Vulnerability
+NOTE: Using 'C:/Users/drsanti/ModusToolbox/tools_3.6/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+
+Prebuild operations complete
+Toolchain validation: PASS
+Initializing build: proj_cm33_s Debug APP_KIT_PSE84_EVAL_EPC2 GCC_ARM
+# 0: Loading the application in directory 'D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_s'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+make[2]: Leaving directory '/cygdrive/d/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_s'
+make[2]: Entering directory '/cygdrive/d/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns'
+FW_FILE_PATH_NAME is: "../../mtb_shared/wifi-host-driver/release-v5.0.8/WHD/COMPONENT_WIFI6/resources/firmware/COMPONENT_55500/COMPONENT_SM/55500A1.trxcse"
+UNAME_S is: CYGWIN_NT-10.0-26100
+FW_FILE_SIZE is: 306688
+The wifi resource path is: ../../mtb_shared/wifi-resources/release-v3.0.0
+The MAC address is: 00:A0:50:09:c7:d0
+NVRAM_FILE_PATH_NAME is: "../../mtb_shared/wifi-resources/release-v3.0.0/nvram/COMPONENT_WIFI6/COMPONENT_55500/COMPONENT_CYW55513_MOD_PSE84_SOM/cyw55513modpse84som_rev3.txt"
+CLM_FILE_PATH_NAME is: "../../mtb_shared/wifi-resources/release-v3.0.0/clm/COMPONENT_WIFI6/COMPONENT_55500/COMPONENT_CYW55513_MOD_PSE84_SOM/55500A1.clm_blob"
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/drsanti/ModusToolbox/tools_3.5 /cygdrive/c/Users/drsanti/ModusToolbox/tools_3.6 C:/Users/drsanti/ModusToolbox/tools_3.5 C:/Users/drsanti/ModusToolbox/tools_3.6". This build is currently using "C:/Users/drsanti/ModusToolbox/tools_3.6". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/drsanti/ModusToolbox/tools_3.6/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+
+Prebuild operations complete
+Toolchain validation: PASS
+Initializing build: proj_cm33_ns Debug APP_KIT_PSE84_EVAL_EPC2 GCC_ARM
+# 0: Loading the application in directory 'D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/2] Building object file D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/build/Debug/local/cm33_ipc_pipe.o
+FAILED: D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/build/Debug/local/cm33_ipc_pipe.o 
+C:/Users/drsanti/Infineon/Tools/mtb-gcc-arm-eabi/14.2.1/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m33 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv5-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -Wno-macro-redefined -MMD -MP -MF D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/build/Debug/local/cm33_ipc_pipe.o.d -MT D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/build/Debug/local/cm33_ipc_pipe.o @D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/build/Debug/local/cm33_ipc_pipe.o.rsp -o D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/build/Debug/local/cm33_ipc_pipe.o -c D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/cm33_ipc_pipe.c
+D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/cm33_ipc_pipe.c: In function 'ipc_task':
+D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/cm33_ipc_pipe.c:156:7: error: implicit declaration of function 'wifi_scanner_scan_rssi'; did you mean 'wifi_scanner_scan'? [-Wimplicit-function-declaration]
+  156 |       wifi_scanner_scan_rssi(req->ssid);
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+      |       wifi_scanner_scan
+D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/cm33_ipc_pipe.c:162:7: error: implicit declaration of function 'wifi_scanner_scan_filtered'; did you mean 'wifi_scanner_scan'? [-Wimplicit-function-declaration]
+  162 |       wifi_scanner_scan_filtered(req->ssid);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       wifi_scanner_scan
+D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/cm33_ipc_pipe.c: In function 'cm33_ipc_send_gyro_data':
+D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/cm33_ipc_pipe.c:225:27: warning: unused variable 'pipeStatus' [-Wunused-variable]
+  225 |   cy_en_ipc_pipe_status_t pipeStatus;
+      |                           ^~~~~~~~~~
+At top level:
+cc1.exe: note: unrecognized command-line option '-Wno-macro-redefined' may have been intended to silence earlier diagnostics
+ninja: build stopped: subcommand failed.
+make[2]: *** [../../mtb_shared/core-make/release-v3.8.0/make/core/ninja.mk:244: D:/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns/build/APP_KIT_PSE84_EVAL_EPC2/Debug/proj_cm33_ns.elf] Error 1
+make[2]: Leaving directory '/cygdrive/d/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc/proj_cm33_ns'
+make[1]: *** [C:/Users/drsanti/ModusToolbox/tools_3.6/make/application.mk:79: build] Error 2
+make[1]: Leaving directory '/cygdrive/d/CODE/2026/psoc8-workspace/psoc-e84-lvgl-ipc'
+make: *** [../../mtb_shared/core-make/release-v3.8.0/make/core/application_bootstrap.mk:29: build_application_bootstrap] Error 2

@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+  16003	      0	   1572	  17575	   44a7	(TOTALS)

@@ -1,0 +1,8 @@
+ColumnLimit: 0
+
+# Allman style: opening brace on its own line, closing brace on its own line
+BreakBeforeBraces: Allman
+
+# Prevent short blocks/functions from collapsing to single line
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
