@@ -1,6 +1,4 @@
-# LVGL
-
-**LVGL 9.x layout and styling helpers for PSoC Edge CM55 (display core).**
+# LVGL-based library for layout & styling
 
 Static library providing flex, grid, stack, and “clean” containers; spacing (pad, gap, margin); size/position helpers; and optional card/pill styling. Reduces boilerplate and keeps UI code consistent across the TESAIoT firmware stack.
 
@@ -21,12 +19,12 @@ Static library providing flex, grid, stack, and “clean” containers; spacing 
 
 ## 1. Overview
 
-| Item | Description |
-|------|-------------|
-| **Target** | PSoC Edge CM55 (display / UI core) |
-| **LVGL** | 9.x (flex & grid APIs) |
-| **Output** | Static library `libui_layout.a` + headers `ui_layout.h`, `ui_style.h` |
-| **Role** | Semantic layout helpers (flex row/col, grid, stack, clean containers) and style constants so application code stays short and consistent. |
+| Item       | Description                                                                                                                               |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Target** | PSoC Edge CM55 (display / UI core)                                                                                                        |
+| **LVGL**   | 9.x (flex & grid APIs)                                                                                                                    |
+| **Output** | Static library `libui_layout.a` + headers `ui_layout.h`, `ui_style.h`                                                                     |
+| **Role**   | Semantic layout helpers (flex row/col, grid, stack, clean containers) and style constants so application code stays short and consistent. |
 
 The library is built separately; the CM55 application links `libui_layout.a` and includes the public headers from `lib_ui_layout/include/`.
 
@@ -80,16 +78,16 @@ flowchart TB
 
 ## 3. Features at a glance
 
-| Category | Capabilities |
-|----------|--------------|
-| **Flex** | Row/column, center, wrap, reverse, wrap-reverse; theme-visible or “clean” (layout-only). |
-| **Grid** | Grid container + `ui_grid_place()` for child placement. |
-| **Stack / overlay** | Stack container, fill parent, center in parent. |
-| **Clean containers** | No background, border, scroll, or click; optional clean scroll. |
-| **Spacing** | Pad (all, xy, x, y), gap, margin (all, xy, x, y). |
-| **Size & position** | Fill parent, wrap content, fixed or percent width/height, center in parent. |
-| **Card / pill** | Card container, pill styling (radius + padding). |
-| **Style constants** | `ui_style.h`: spacing (`UI_SPACE_*`), radius (`UI_RADIUS_*`), sizes, opacity, z-order. |
+| Category             | Capabilities                                                                             |
+| -------------------- | ---------------------------------------------------------------------------------------- |
+| **Flex**             | Row/column, center, wrap, reverse, wrap-reverse; theme-visible or “clean” (layout-only). |
+| **Grid**             | Grid container + `ui_grid_place()` for child placement.                                  |
+| **Stack / overlay**  | Stack container, fill parent, center in parent.                                          |
+| **Clean containers** | No background, border, scroll, or click; optional clean scroll.                          |
+| **Spacing**          | Pad (all, xy, x, y), gap, margin (all, xy, x, y).                                        |
+| **Size & position**  | Fill parent, wrap content, fixed or percent width/height, center in parent.              |
+| **Card / pill**      | Card container, pill styling (radius + padding).                                         |
+| **Style constants**  | `ui_style.h`: spacing (`UI_SPACE_*`), radius (`UI_RADIUS_*`), sizes, opacity, z-order.   |
 
 ---
 
@@ -106,9 +104,9 @@ make
 
 ### Output
 
-| Artifact | Path |
-|----------|------|
-| Static library | `lib_ui_layout/lib/libui_layout.a` |
+| Artifact       | Path                                                                    |
+| -------------- | ----------------------------------------------------------------------- |
+| Static library | `lib_ui_layout/lib/libui_layout.a`                                      |
 | Public headers | `lib_ui_layout/include/ui_layout.h`, `lib_ui_layout/include/ui_style.h` |
 
 Headers are copied from `lib_ui_layout/` into `include/` by the Makefile. Use `make clean` to remove build outputs.
@@ -168,10 +166,10 @@ ui_pad_all(card, UI_PAD_SCREEN);
 
 ## 7. Documentation & references
 
-| Document | Description |
-|----------|-------------|
-| [USER_MANUAL.md](USER_MANUAL.md) | Full user manual: API reference, spacing/size constants, build details, integration (Makefile), usage examples, limits. |
-| [TOOLCHAIN_NOTE.md](TOOLCHAIN_NOTE.md) | GCC vs LLVM_ARM when linking `libui_layout.a` into proj_cm55. |
+| Document                               | Description                                                                                                             |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [USER_MANUAL.md](USER_MANUAL.md)       | Full user manual: API reference, spacing/size constants, build details, integration (Makefile), usage examples, limits. |
+| [TOOLCHAIN_NOTE.md](TOOLCHAIN_NOTE.md) | GCC vs LLVM_ARM when linking `libui_layout.a` into proj_cm55.                                                           |
 
 For flex/layout usage examples in the CM55 app, see [UI layout examples](../proj_cm55/src/ui/examples/UI_LAYOUT_EXAMPLES.md).
 
@@ -179,16 +177,16 @@ For flex/layout usage examples in the CM55 app, see [UI layout examples](../proj
 
 ## 8. Source layout
 
-| Path | Description |
-|------|-------------|
-| `lib_ui_layout/ui_layout.c` | Implementation. |
-| `lib_ui_layout/ui_layout.h` | Public API (copied to `include/` by make). |
-| `lib_ui_layout/ui_style.h` | Style constants (copied to `include/` by make). |
-| `lib_ui_layout/Makefile` | Builds library and copies headers. |
-| `lib_ui_layout/config/cycfg_system.h` | Minimal stub for library build. |
+| Path                                  | Description                                     |
+| ------------------------------------- | ----------------------------------------------- |
+| `lib_ui_layout/ui_layout.c`           | Implementation.                                 |
+| `lib_ui_layout/ui_layout.h`           | Public API (copied to `include/` by make).      |
+| `lib_ui_layout/ui_style.h`            | Style constants (copied to `include/` by make). |
+| `lib_ui_layout/Makefile`              | Builds library and copies headers.              |
+| `lib_ui_layout/config/cycfg_system.h` | Minimal stub for library build.                 |
 
 All source and build outputs live under `lib_ui_layout/`.
 
 ---
 
-*Part of the TESAIoT Firmware Stack (Alpha). See [tesaiot_firmware_stack_alpha README](../README.md) for the full project.*
+_Part of the TESAIoT Firmware Stack (Alpha). See [tesaiot_firmware_stack_alpha README](../README.md) for the full project._
