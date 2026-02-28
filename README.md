@@ -4,6 +4,10 @@
 
 This documentation contains the **TESAIoT** multi-core embedded projects for Infineon PSoC™ 8 (Cortex-M55 + Cortex-M33): the main firmware stack and the DoReMi sound/audio application.
 
+> **Demos, examples & other materials**  
+> Video demos, 3D models (e.g. ABB Robot Arm, Cannon, Devices, Gauge, Guitar, MCU-Servo, PLC, PSoC-Edge-E84), kit images, and related assets are available in the **TESAIoT_Models** Google Drive folder:  
+> **[https://drive.google.com/drive/folders/1MXBSm1xYbslumSjEUwSm6SXi3KADajb-?usp=drive_link](https://drive.google.com/drive/folders/1MXBSm1xYbslumSjEUwSm6SXi3KADajb-?usp=drive_link)**
+
 ---
 
 ## Table of Contents
