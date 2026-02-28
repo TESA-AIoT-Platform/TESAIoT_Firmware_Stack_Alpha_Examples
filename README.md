@@ -72,7 +72,8 @@ Multi-core framework for IoT and medical applications: UI (LVGL) on CM55, connec
 | -------------------------------------------------------------------------------------------- | ----------------------------------- |
 | [User button](tesaiot_firmware_stack_alpha/shared/docs/USER_BUTTON.md)                       | Shared user button logic            |
 | [WiFi scanner (shared)](tesaiot_firmware_stack_alpha/shared/docs/WIFI_SCANNER.md)            | WiFi scanner implementation         |
-| [UI layout library – user manual](tesaiot_firmware_stack_alpha/lib_ui_layout/USER_MANUAL.md) | `lib_ui_layout` usage (flex, theme) |
+| [UI layout library (lib_ui_layout)](tesaiot_firmware_stack_alpha/lib_ui_layout/README.md)     | Overview, build, integration, TOC   |
+| [UI layout library – user manual](tesaiot_firmware_stack_alpha/lib_ui_layout/USER_MANUAL.md) | Full API reference, style constants |
 
 #### 1.6 BSXLite (IMU / sensor fusion)
 
